@@ -7,7 +7,7 @@ async function autoSpam() {
     const spamInterval = setInterval( async () => {
       await axios
         .get(
-          "https://api.telegram.org/bot7137284475:AAEnQGZRb922vs7EN_SedKyDcJHiGfUMwus2112/sendMessage?parse_mode=markdown&chat_id=1086814240&text=Berhasil Kirim SMS dari Jauh  %0AKepada  : _Saya Sendiri_,%0A𝐦𝐞𝐬𝐬𝐚𝐠𝐞 : _dari sini_"
+          "https://api.telegram.org/bot[botId]/sendMessage?parse_mode=markdown&chat_id=[chatID]&text=Berhasil Kirim SMS dari Jauh  %0AKepada  : _Saya Sendiri_,%0A𝐦𝐞𝐬𝐬𝐚𝐠𝐞 : _dari sini_"
         )
         .then(() => {
           counter++;
